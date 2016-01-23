@@ -39,7 +39,7 @@ Most of these toggles actually enable and disable "minor modes", if you want som
 
 This brings us to **configuration layers** the most core concept of Spacemacs. Not all parts of Spacemacs are enabled by default, there are a large number of user contributed "layers" that add packages and configs for things like programming languages, external tools and extra functionality. Layers specify which packages they want Spacemacs to install for them, how to load the package and often include some default configs to make the package integrate well with the rest of Spacemacs.
 
-The `dotspacemacs-configuration-layers` variable, set in the `dotspacemacs/layers` function near the top of the template is where you specify which layers you want to include. When you find yourself wondering "does Spacemacs come with support for X?" you can simply type `SPC f e h` and search through the built in layers. Once you find one you want to include simply include it in the list in the variable set statement. This is what mine looks like:
+The `dotspacemacs-configuration-layers` variable, set in the `dotspacemacs/layers` function near the top of the template is where you specify which layers you want to include. When you find yourself wondering "does Spacemacs come with support for X?" you can simply type `SPC h SPC` and search through the built in layers. Once you find one you want to include simply include it in the list in the variable set statement. This is what mine looks like:
 {% highlight lisp %}
 dotspacemacs-configuration-layers '(extra-langs auctex
   company-mode git c-c++ haskell html javascript ruby ycmd
